@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>src="script.js"</script>
+    <title>Document</title>
+</head>
+<div class="container">
+    <div class="vport">0</div>
+    <div class="keys">
+        <div class="each-row row-1">
+            <button onclick="setDefaultViewPortValue()">AC</button>
+            <button onclick="backspaceViewPort()">DEL</button>
+            <button class="operator" onclick="addToViewPort('%')">%</button>
+            <button class="operator" onclick="addToViewPort('/')">/</button>
+
+        </div>
+        <div class="each-row row-2">
+            <button onclick="addToViewPort('7')">7</button>
+            <button onclick="addToViewPort('8')">8</button>
+            <button onclick="addToViewPort('9')">9</button>
+            <button class="operator" onclick="addToViewPort('*')">*</button>
+        </div>
+        <div class="each-row row-3">
+            <button onclick="addToViewPort('4')">4</button>
+            <button onclick="addToViewPort('5')">5</button>
+            <button onclick="addToViewPort('6')">6</button>
+            <button class="operator" onclick="addToViewPort('-')">-</button>
+        </div>
+        <div class="each-row row-4">
+            <button onclick="addToViewPort('1')">1</button>
+            <button onclick="addToViewPort('2')">2</button>
+            <button onclick="addToViewPort('3')">3</button>
+            <button class="operator" onclick="addToViewPort('+')">+</button>
+        </div>
+        <div class="each-row row-5">
+            <button onclick="addToViewPort('00')">00</button>
+            <button onclick="addToViewPort('0')">0</button>
+            <button class="operator" onclick="addToViewPort('.')">.</button>
+            <button onclick="displayCalculation()">=</button>
+        </div>
+    </div>
+</div>
